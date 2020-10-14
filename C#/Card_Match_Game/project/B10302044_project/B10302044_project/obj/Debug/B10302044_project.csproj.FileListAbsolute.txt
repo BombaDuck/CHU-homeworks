@@ -1,0 +1,12 @@
+c:\users\ray\documents\visual studio 2013\Projects\B10302044_project\B10302044_project\bin\Debug\B10302044_project.exe.config
+c:\users\ray\documents\visual studio 2013\Projects\B10302044_project\B10302044_project\bin\Debug\B10302044_project.exe
+c:\users\ray\documents\visual studio 2013\Projects\B10302044_project\B10302044_project\bin\Debug\B10302044_project.pdb
+c:\users\ray\documents\visual studio 2013\Projects\B10302044_project\B10302044_project\obj\Debug\B10302044_project.csprojResolveAssemblyReference.cache
+c:\users\ray\documents\visual studio 2013\Projects\B10302044_project\B10302044_project\obj\Debug\B10302044_project.Form1.resources
+c:\users\ray\documents\visual studio 2013\Projects\B10302044_project\B10302044_project\obj\Debug\B10302044_project.Properties.Resources.resources
+c:\users\ray\documents\visual studio 2013\Projects\B10302044_project\B10302044_project\obj\Debug\B10302044_project.csproj.GenerateResource.Cache
+c:\users\ray\documents\visual studio 2013\Projects\B10302044_project\B10302044_project\obj\Debug\B10302044_project.exe
+c:\users\ray\documents\visual studio 2013\Projects\B10302044_project\B10302044_project\obj\Debug\B10302044_project.pdb
+C:\Users\Ray\Desktop\視窗程式設計\B10302044_project\B10302044_project\bin\Debug\B10302044_project.exe.config
+C:\Users\Ray\Desktop\視窗程式設計\B10302044_project\B10302044_project\obj\Debug\B10302044_project.exe
+C:\Users\Ray\Desktop\視窗程式設計\B10302044_project\B10302044_project\obj\Debug\B10302044_project.pdb
