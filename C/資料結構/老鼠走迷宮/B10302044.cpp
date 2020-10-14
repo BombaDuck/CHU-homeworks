@@ -106,7 +106,7 @@ void print_maze()
 			if (map[i][j]== 1 )
 			{
 				SetColor(7,6);
-				printf("¢i");	
+				printf("‚ñà");	
 			}
 			else if(map[i][j]== 0)
 			{
@@ -116,17 +116,17 @@ void print_maze()
 			else if(map[i][j]==5)
 			{
 				SetColor(6,0);
-				printf("¢C");
+				printf("ÔºÑ");
 			}
 			else if(map[i][j]==8)
 			{
 				SetColor(0,3);
-				printf("°Ø");
+				printf("Ôºä");
 			}
 			else if(map[i][j]==4)
 			{
 				SetColor(7,3);
-				printf("¢”");
+				printf("Ôº•");
 				
 				end1 = i;
 				end2 = j;
@@ -134,28 +134,28 @@ void print_maze()
 			else if(map[i][j]==3)
 			{
 				SetColor(6,0);
-				printf("°π");
+				printf("‚òÖ");
 				
 			}
 			else if(map[i][j]==6)
 			{
 				SetColor(4,0);
-				printf("°œ");
+				printf("Ôºã");
 			}
 			else if(map[i][j] ==7)
 			{
 				SetColor(7,0);
-				printf("°–");
+				printf("Ôºç");
 			}
 			else if(map[i][j] ==2)
 			{
 				SetColor(7,0);
-				printf("°D");
+				printf("Ôºé");
 			}
 			else if(map[i][j] ==9)
 			{
 				SetColor(7,0);
-				printf("¢Ê");
+				printf("Ôº∏");
 			}
 			else
 			{
@@ -225,9 +225,9 @@ void run_maze()
 	
 		
 		healths --;
-		printf("\n\n\n ≥—æl•Õ©R≠» = %d",healths);
+		printf("\n\n\n Ââ©È§òÁîüÂëΩÂÄº = %d",healths);
 
-		if(map[pt[z].x+1][pt[z].y+1] != 1 && map[pt[z].x+1][pt[z].y+1] !=2 && map[pt[z].x+1][pt[z].y+1] != 9) //•k§U 
+		if(map[pt[z].x+1][pt[z].y+1] != 1 && map[pt[z].x+1][pt[z].y+1] !=2 && map[pt[z].x+1][pt[z].y+1] != 9) //Âè≥‰∏ã 
 		{
 			if(map[pt[z].x+1][pt[z].y+1] == 5)
 			{
@@ -252,7 +252,7 @@ void run_maze()
 			z++;
 	
 		}
-		else if(map[pt[z].x-1][pt[z].y] != 1 && map[pt[z].x-1][pt[z].y] != 2&& map[pt[z].x-1][pt[z].y] != 9) //§W 
+		else if(map[pt[z].x-1][pt[z].y] != 1 && map[pt[z].x-1][pt[z].y] != 2&& map[pt[z].x-1][pt[z].y] != 9) //‰∏ä 
 		{
 			if(map[pt[z].x-1][pt[z].y] == 5)
 			{
@@ -277,7 +277,7 @@ void run_maze()
 			map[pt[z].x][pt[z].y] = 3;
 		
 		}
-		else if(map[pt[z].x+1][pt[z].y-1] != 1&& map[pt[z].x+1][pt[z].y-1] != 2&& map[pt[z].x+1][pt[z].y-1] != 9) //•™§W 
+		else if(map[pt[z].x+1][pt[z].y-1] != 1&& map[pt[z].x+1][pt[z].y-1] != 2&& map[pt[z].x+1][pt[z].y-1] != 9) //Â∑¶‰∏ä 
 		{
 			if(map[pt[z].x+1][pt[z].y-1] == 5)
 			{
@@ -302,7 +302,7 @@ void run_maze()
 			map[pt[z].x][pt[z].y] = 3;
 		
 		}
-		else if(map[pt[z].x-1][pt[z].y+1] != 1 && map[pt[z].x-1][pt[z].y+1] != 2&& map[pt[z].x-1][pt[z].y+1] != 9) //•k§W 
+		else if(map[pt[z].x-1][pt[z].y+1] != 1 && map[pt[z].x-1][pt[z].y+1] != 2&& map[pt[z].x-1][pt[z].y+1] != 9) //Âè≥‰∏ä 
 		{
 			if(map[pt[z].x-1][pt[z].y+1] == 5)
 			{
@@ -327,7 +327,7 @@ void run_maze()
 			map[pt[z].x][pt[z].y] = 3;
 		
 		}
-		else if(map[pt[z].x+1][pt[z].y] != 1 && map[pt[z].x+1][pt[z].y] != 2&& map[pt[z].x+1][pt[z].y] != 9) //§U 
+		else if(map[pt[z].x+1][pt[z].y] != 1 && map[pt[z].x+1][pt[z].y] != 2&& map[pt[z].x+1][pt[z].y] != 9) //‰∏ã 
 		{
 			if(map[pt[z].x+1][pt[z].y] == 5)
 			{
@@ -353,7 +353,7 @@ void run_maze()
 		
 			
 		}
-		else if(map[pt[z].x-1][pt[z].y-1] != 1 && map[pt[z].x-1][pt[z].y-1] != 2&& map[pt[z].x-1][pt[z].y-1] != 9) //•™§U 
+		else if(map[pt[z].x-1][pt[z].y-1] != 1 && map[pt[z].x-1][pt[z].y-1] != 2&& map[pt[z].x-1][pt[z].y-1] != 9) //Â∑¶‰∏ã 
 		{
 			if(map[pt[z].x-1][pt[z].y-1] == 5)
 			{
@@ -378,7 +378,7 @@ void run_maze()
 			map[pt[z].x][pt[z].y] = 3;
 		
 		}
-		else if(map[pt[z].x][pt[z].y-1] != 1 && map[pt[z].x][pt[z].y-1] != 2&& map[pt[z].x][pt[z].y-1] != 9) //•™ 
+		else if(map[pt[z].x][pt[z].y-1] != 1 && map[pt[z].x][pt[z].y-1] != 2&& map[pt[z].x][pt[z].y-1] != 9) //Â∑¶ 
 		{
 			if(map[pt[z].x][pt[z].y-1] == 5)
 			{
@@ -404,7 +404,7 @@ void run_maze()
 	
 		} 
 		
-		else if(map[pt[z].x][pt[z].y+1] != 1 && map[pt[z].x][pt[z].y+1] != 2&& map[pt[z].x][pt[z].y+1] != 9) //•k 
+		else if(map[pt[z].x][pt[z].y+1] != 1 && map[pt[z].x][pt[z].y+1] != 2&& map[pt[z].x][pt[z].y+1] != 9) //Âè≥ 
 		{
 			if(map[pt[z].x][pt[z].y+1] == 5)
 			{
@@ -445,7 +445,7 @@ void run_maze()
 	}
 
 }
-void gotoxy(int xpos,int ypos)//≥]∏m¶C¶LÆyº– 
+void gotoxy(int xpos,int ypos)//Ë®≠ÁΩÆÂàóÂç∞Â∫ßÊ®ô 
 {
 
   COORD scrn;
