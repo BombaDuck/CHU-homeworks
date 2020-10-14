@@ -1,0 +1,183 @@
+#include <stdlib.h>
+#include <stdio.h>
+#define WIDE 256 
+
+char char1[256];
+char char2[256];
+int array1[256];
+int array2[256];
+int answear[512];
+int a=0, b=0, c=0, count=0,wide = 0;
+
+void readin();
+void readin2();
+void caculate();
+
+int main(void)
+{
+	int i;
+	readin();
+	readin2();
+	caculate();
+	
+	printf("\n");
+	printf("第一個數字 : ");
+	for(i=0;i<WIDE;i++)
+	{
+		printf("%d",array1[i]);
+	}
+	printf("\n\n");
+	
+	printf("第二個數字 : ");
+	for(i=0;i<WIDE;i++)
+	{
+		printf("%d",array2[i]);
+	}
+	printf("\n\n");
+	
+	printf("答案 : ");
+	for(i=WIDE+WIDE-1;i>=0;i--)
+	{
+		printf("%d",answear[i]);
+	}
+	printf("\n\n");
+	
+	system("pause");
+	return 0;
+}
+
+void readin()
+{
+	char filename[10];
+	FILE *fp;
+	int i=0;
+	char read;
+	printf("請輸入檔案名稱(a.txt) 以讀取第一串數字 : ");
+	scanf("%s",&filename);
+	
+	fp = fopen(filename,"r");
+	
+	if(fp == NULL) printf("Reading Failed!");
+	else
+	{
+			for(i=0;i<WIDE;i++)
+			{
+				fscanf(fp,"%c",&read);
+				if(read == ' ')
+					i = i-1;
+				else
+					char1[i] = read;
+			}
+	}
+	fclose(fp);
+	
+	printf("請輸入檔案名稱(a.txt) 以讀取第一串數字 : ");
+	scanf("%s",&filename);
+	
+	fp = fopen(filename,"r");
+	
+	if(fp == NULL) printf("Reading Failed!");
+	else
+	{
+			for(i=0;i<WIDE;i++)
+			{
+				fscanf(fp,"%c",&read);
+				if(read == ' ')
+					i = i-1;
+				else
+					char2[i] = read;
+			}
+	}
+	fclose(fp);
+}
+
+void readin2()
+{
+	int i;
+	
+	for(i=0;i<WIDE;i++)
+	{
+		if(char1[i] == '0')
+			array1[i] = 0;
+		else if(char1[i] == '1')
+			array1[i] = 1;
+		else if(char1[i] == '2')
+			array1[i] = 2;
+		else if(char1[i] == '3')
+			array1[i] = 3;
+		else if(char1[i] == '4')
+			array1[i] = 4;
+		else if(char1[i] == '5')
+			array1[i] = 5;
+		else if(char1[i] == '6')
+			array1[i] = 6;
+		else if(char1[i] == '7')
+			array1[i] = 7;
+		else if(char1[i] == '8')
+			array1[i] = 8;
+		else if(char1[i] == '9')
+			array1[i] = 9;
+	}
+	
+	for(i=0;i<WIDE;i++)
+	{
+		if(char2[i] == '0')
+			array2[i] = 0;
+		else if(char2[i] == '1')
+			array2[i] = 1;
+		else if(char2[i] == '2')
+			array2[i] = 2;
+		else if(char2[i] == '3')
+			array2[i] = 3;
+		else if(char2[i] == '4')
+			array2[i] = 4;
+		else if(char2[i] == '5')
+			array2[i] = 5;
+		else if(char2[i] == '6')
+			array2[i] = 6;
+		else if(char2[i] == '7')
+			array2[i] = 7;
+		else if(char2[i] == '8')
+			array2[i] = 8;
+		else if(char2[i] == '9')
+			array2[i] = 9;
+	}
+	
+}
+
+void caculate()
+{
+	int i,j,k;
+	
+	for(i=0;i<WIDE;i++)
+	{
+		for(j=0;j<WIDE;j++)
+		{
+			a = (array1[i] * array2[j])%10;
+			b = (array1[i] * array2[j])/10;
+			
+			
+			answear[i+j] = answear[i+j] + a;
+			answear[i+j+1] = answear[i+j+1] + b;
+			if(answear[i+j] >=10)
+			{
+				answear[i+j+1] = answear[i+j+1] +1;
+				answear[i+j] = answear[i+j]%10;
+			}
+			if(answear[i+j+1] >=10)
+			{
+				answear[i+j+1+1] = answear[i+j+1+1] +1;
+				answear[i+j+1] = answear[i+j+1]%10;
+			}
+			
+		/*	
+			for(k=0;k<WIDE+WIDE-1;k++)
+			{
+				printf("%d",answear[k]);
+			}
+			printf("\n");
+		*/ 
+		}
+	}
+	
+}
