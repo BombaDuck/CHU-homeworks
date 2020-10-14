@@ -3,7 +3,7 @@
 
 int main(void){
 	int x=1,z=0,k=1,num,sum=0;
- 	printf("½Ð¿é¤J¤@­Ó¼Æ¦r :");
+ 	printf("è«‹è¼¸å…¥ä¸€å€‹æ•¸å­— :");
 	scanf("%d",&num);
 	
 	for(;;)
@@ -15,17 +15,17 @@ int main(void){
 	
 	if(num<0)
 		{
-		printf("¿é¤Jªº¼Æ¦r¿ù»~ ½Ð¿é¤J¤@­Ó¥¿¼Æ"); 
+		printf("è¼¸å…¥çš„æ•¸å­—éŒ¯èª¤ è«‹è¼¸å…¥ä¸€å€‹æ­£æ•¸"); 
 		break;
 		}
 	else if(num==1) 
 		{
-		printf("Á`¦@¥[¤F 1 ¦¸"); 
+		printf("ç¸½å…±åŠ äº† 1 æ¬¡"); 
 		break;
 		}
 	else if(sum > num) 
 		{
-		printf("Á`¦@¥[¤F %d ¦¸",x);
+		printf("ç¸½å…±åŠ äº† %d æ¬¡",x);
 		break;
 		}
 	
