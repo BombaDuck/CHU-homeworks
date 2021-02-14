@@ -1,2 +1,2 @@
-# CHU-homeworks
+# College-homeworks
 # Pratices
