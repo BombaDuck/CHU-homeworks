@@ -27,20 +27,20 @@ int main(void)
 	
 	srand(time(NULL));
 	
-	printf("< ´ˆ•Ù∑NÆ◊•Û´·≤£•Õ∂√º∆∞}¶C >.........");
+	printf("< Êåâ‰ªªÊÑèÊ°à‰ª∂ÂæåÁî¢Áîü‰∫ÇÊï∏Èô£Âàó >.........");
 	system("pause");
 	
 	for(i=0;i<100;i++)
 	{
 		newArray();
 		
-		printf("< ≤ƒ%d≠”∂√º∆∞}¶C >\n",i+1);
+		printf("< Á¨¨%dÂÄã‰∫ÇÊï∏Èô£Âàó >\n",i+1);
 		
 		for(j=0;j<LENGTH;j++)
 		{
-			if(j%10==0) //®C¶L10≠”º∆¶r¥´§@¶Ê 
+			if(j%10==0) //ÊØèÂç∞10ÂÄãÊï∏Â≠óÊèõ‰∏ÄË°å 
 			printf("\n");
-			printf("%3d ",array[j]); //©T©wµπ3≠”¶Ï∏m 
+			printf("%3d ",array[j]); //Âõ∫ÂÆöÁµ¶3ÂÄã‰ΩçÁΩÆ 
 		}
 		printf("\n\n"); 
 		BubbleSort();
@@ -108,32 +108,32 @@ void PrintfAll()
 	
 	printf("\n\n");
 	
-	printf("BubbleSort´·µ≤™G : ");
+	printf("BubbleSortÂæåÁµêÊûú : ");
 	for(i=0;i<LENGTH;i++)
 	{
 		if(i%10==0)
 		printf("\n");
 		printf("%3d ",BubbleA[i]);
 	}
-	printf("\n•≠ß°(%d¶∏)™·∂O%d¶∏\n\n",LENGTH,BubbleTimes);
+	printf("\nÂπ≥Âùá(%dÊ¨°)Ëä±Ë≤ª%dÊ¨°\n\n",LENGTH,BubbleTimes);
 	
-	printf("SelectionSort´·µ≤™G : ");
+	printf("SelectionSortÂæåÁµêÊûú : ");
 	for(i=0;i<LENGTH;i++)
 	{
 		if(i%10 == 0)
 		printf("\n");
 		printf("%3d ",SelectionA[i]);
 	}
-	printf("\n•≠ß°(%d¶∏)™·∂O%d¶∏\n\n",LENGTH,SelectionTimes);
+	printf("\nÂπ≥Âùá(%dÊ¨°)Ëä±Ë≤ª%dÊ¨°\n\n",LENGTH,SelectionTimes);
 	
-	printf("InsertionSort´·µ≤™G : ");
+	printf("InsertionSortÂæåÁµêÊûú : ");
 	for(i=0;i<LENGTH;i++)
 	{
 		if(i%10 == 0)
 		printf("\n");
 		printf("%3d ",InsertionA[i]);
 	}
-	printf("\n•≠ß°(%d¶∏)™·∂O%d¶∏\n\n",LENGTH,InsertionTimes);
+	printf("\nÂπ≥Âùá(%dÊ¨°)Ëä±Ë≤ª%dÊ¨°\n\n",LENGTH,InsertionTimes);
 	
 	
 	
@@ -147,16 +147,16 @@ void BubbleSort()
 		z=0;
 		for(j=0;j<i;j++)
 		{
-			if(BubbleA[j]>BubbleA[j+1]) //´e§@≠”º∆¶r§j©Û´·§@≠”º∆¶r™∫∏‹ 
+			if(BubbleA[j]>BubbleA[j+1]) //Ââç‰∏ÄÂÄãÊï∏Â≠óÂ§ßÊñºÂæå‰∏ÄÂÄãÊï∏Â≠óÁöÑË©± 
 			{
-				k = BubbleA[j+1];  //•Ê¥´ 
+				k = BubbleA[j+1];  //‰∫§Êèõ 
 				BubbleA[j+1] = BubbleA[j];
 				BubbleA[j] = k;
-				z = 1; //¨ˆø˝¨Oß_¶≥•Ê¥´ 
+				z = 1; //Á¥ÄÈåÑÊòØÂê¶Êúâ‰∫§Êèõ 
 			}
 			BubbleTimes++;
 		}
-		if(z == 0) //®S¶≥¥´™∫∏‹∏ı•X 
+		if(z == 0) //Ê≤íÊúâÊèõÁöÑË©±Ë∑≥Âá∫ 
 		break;
 	}
 
@@ -171,7 +171,7 @@ void SelectionSort()
 		{
 			if(SelectionA[i]>SelectionA[j]) 
 			{
-				k = SelectionA[j];  //•Ê¥´ 
+				k = SelectionA[j];  //‰∫§Êèõ 
 				SelectionA[j] = SelectionA[i];
 				SelectionA[i] = k;
 			}
@@ -183,17 +183,16 @@ void InsertionSort()
 {
 	int i,j,k,z;
 	
-	 for (i = 1; i < LENGTH; i++) 
-	 { 
-	    z = InsertionA[i];
-        for (j=i-1;j>=0 && InsertionA[j]>z;j--) 
+	for (i = 1; i < LENGTH; i++) 
+	{ 
+		z = InsertionA[i];
+		for (j=i-1;j>=0 && InsertionA[j]>z;j--) 
 		{
-            InsertionA[j+1] = InsertionA[j];
-            InsertionTimes++;
-        }
-        InsertionA[j+1] = z;
-   		InsertionTimes++;
-
+			InsertionA[j+1] = InsertionA[j];
+			InsertionTimes++;
+		}
+		InsertionA[j+1] = z;
+		InsertionTimes++;
 	}
 }
 
