@@ -4,7 +4,7 @@
 int main(void){
   		int income, tax, x=0;
 		double taxrate=0.0;
-		printf("½Ð¿é¤Jºî¦X©Ò±o²bÃB¡G");
+		printf("è«‹è¼¸å…¥ç¶œåˆæ‰€å¾—æ·¨é¡ï¼š");
 		scanf("%d", &income);
 		if(income >= 0 && income<=520000)
 		{
@@ -33,18 +33,18 @@ int main(void){
 		}
 		else
 		{
-			printf("  ½Ð¿é¤J¤j©óµ¥©ó0ªº¼Æ¦r!!");
+			printf("  è«‹è¼¸å…¥å¤§æ–¼ç­‰æ–¼0çš„æ•¸å­—!!");
 			exit(0);
 		}
 		tax=income * taxrate ;
 		printf("\n");
-		printf("  ºî¦X©Ò±o²bÃB¡G %d ¤¸\n", income);
-		printf("  µ|        ÃB¡G %2.0f ¢H\n", taxrate*100 );
+		printf("  ç¶œåˆæ‰€å¾—æ·¨é¡ï¼š %d å…ƒ\n", income);
+		printf("  ç¨…        é¡ï¼š %2.0f ï¼…\n", taxrate*100 );
 		printf("  --------------------\n");
-		printf("  µ|        ª÷¡G %d ¤¸\n", tax);
-		printf("  ²Ö ¶i ®t  ÃB¡G %d ¤¸\n", x);
+		printf("  ç¨…        é‡‘ï¼š %d å…ƒ\n", tax);
+		printf("  ç´¯ é€² å·®  é¡ï¼š %d å…ƒ\n", x);
 		printf("  --------------------\n");
-		printf("  ¤µ¦~À³¯Çµ|ÃB¡G %d ¤¸\n", tax-x);
+		printf("  ä»Šå¹´æ‡‰ç´ç¨…é¡ï¼š %d å…ƒ\n", tax-x);
 	
   printf("\n\n");
 
