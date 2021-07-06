@@ -4,9 +4,9 @@
 int main(void){
 int i=1,j=1,n,avg,sum=0,x,full;
 
-printf("½Ğ¿é¤J¤H¼Æ :");
+printf("è«‹è¼¸å…¥äººæ•¸ :");
 scanf("%d",&n);
-printf("½Ğ¿é¤Jº¡¤À¦¨ÁZ :");
+printf("è«‹è¼¸å…¥æ»¿åˆ†æˆç¸¾ :");
 scanf("%d",&full);
   if(i<=n)
   {
@@ -15,18 +15,18 @@ scanf("%d",&full);
                   		 while(j<=3)
                         {
                         	
-                                         printf("½Ğ¿é¤J²Ä%d­Ó¤Hªº²Ä%d­Ó¦¨ÁZ :",i,j);
+                                         printf("è«‹è¼¸å…¥ç¬¬%då€‹äººçš„ç¬¬%då€‹æˆç¸¾ :",i,j);
                                          scanf("%d",&x); 
                                          if(x<0)
                                          {
-                                                   printf("½Ğ¿é¤J¤¶©ó0~%dªº¼Æ¦r\n",full); 
+                                                   printf("è«‹è¼¸å…¥ä»‹æ–¼0~%dçš„æ•¸å­—\n",full); 
                                                    j=j-1;
                                                    i=i-1;
 												   break;
                                          }
                                          else if(x>full)
                                          {
-                                                   printf("½Ğ¿é¤J¤¶©ó0~%dªº¼Æ¦r\n",full); 
+                                                   printf("è«‹è¼¸å…¥ä»‹æ–¼0~%dçš„æ•¸å­—\n",full); 
                                                    j=j-1;
                                                    i=i-1;
 												   break;
@@ -35,7 +35,7 @@ scanf("%d",&full);
                         			 	 j++;
 						}
             avg = sum/3;  
-            printf("²Ä%d­Ó¤Hªº¦¨ÁZ :%d\n",i,avg);
+            printf("ç¬¬%då€‹äººçš„æˆç¸¾ :%d\n",i,avg);
             sum=0;
         	i++;
 			j=1;
@@ -43,7 +43,7 @@ scanf("%d",&full);
   }
 	else
 	{
-	printf("erro!  erro!  ½Ğ¿é¤J>=1ªº¼Æ¦r");
+	printf("erro!  erro!  è«‹è¼¸å…¥>=1çš„æ•¸å­—");
 	}
 
 
